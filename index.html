@@ -206,7 +206,7 @@
 <h2 id="相关理解"><a href="#相关理解" class="headerlink" title="相关理解"></a>相关理解</h2><ul>
 <li>工作区：文件资源所在的空间，是实际文件的持有者，eg.比如我的learngit文件夹就是一个工作区</li>
 <li>缓存区: 像缓存区域，临时保存改动,Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。</li>
-<li>版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。<br><img src="images/gitarea.jpg" alt="工作区、缓存区、版本库理解图"></li>
+<li>版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。<br><img src="/images/gitarea.jpg" alt="工作区、缓存区、版本库理解图"></li>
 </ul>
 <h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config</span><br></pre></td></tr></table></figure>
 <p>该命令用于配置或者读取相应<code>git</code>的工作环境变量，这些环境变量决定了<code>git</code>在各个环节的具体工作方式和行为，这些变量可以存放在三个不同的地方：</p>
@@ -231,7 +231,7 @@
 <h3 id="推送改动"><a href="#推送改动" class="headerlink" title="推送改动"></a>推送改动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master  //将这些改动提交到远端仓库，可以把 master 换成你想要推送的任何分支。</span><br></pre></td></tr></table></figure>
 <p>如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin &lt;server&gt;  //&lt;server&gt;为你的github上的仓库地址</span><br></pre></td></tr></table></figure></p>
 <p>如此你就能够将你的改动推送到所添加的服务器上去了</p>
-<h3 id="创建分支并切换"><a href="#创建分支并切换" class="headerlink" title="创建分支并切换"></a>创建分支并切换</h3><p>分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="images/br.png" alt=""></p>
+<h3 id="创建分支并切换"><a href="#创建分支并切换" class="headerlink" title="创建分支并切换"></a>创建分支并切换</h3><p>分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="/images/br.png" alt="创建分支"></p>
 <p>创建分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch mybranch  //创建名为mybranch的分支</span><br></pre></td></tr></table></figure></p>
 <p>切换分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout mybranch  //创建名为mybranch的分支</span><br><span class="line">$ git checkout master    //切换回主分支</span><br></pre></td></tr></table></figure></p>
 <p>或者创建并同时切换<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b feature_x  //创建一个叫做“feature_x”的分支，并切换过去：</span><br></pre></td></tr></table></figure></p>
