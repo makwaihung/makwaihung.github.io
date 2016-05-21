@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Node.js开发笔记-环境准备 | Mak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、Node.js简介Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。优点是：
+
+基于Chrome V8 引擎
+单线程
+非阻塞式 I/O
+事件驱动
+丰富的第三方类库
+
+2、nvm的安装nvm 的全称是 Node Version Manager，之所以先安装这个工具，是因为Node.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js开发笔记-环境准备">
+<meta property="og:url" content="http://yoursite.com/2016/05/21/Node-js开发笔记-环境准备/index.html">
+<meta property="og:site_name" content="Mak">
+<meta property="og:description" content="1、Node.js简介Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。优点是：
+
+基于Chrome V8 引擎
+单线程
+非阻塞式 I/O
+事件驱动
+丰富的第三方类库
+
+2、nvm的安装nvm 的全称是 Node Version Manager，之所以先安装这个工具，是因为Node.">
+<meta property="og:image" content="http://yoursite.com/images/nodeNote/nvminstall.png">
+<meta property="og:image" content="http://yoursite.com/images/nodeNote/nvmlist.png">
+<meta property="og:image" content="http://yoursite.com/images/nodeNote/nvmuse.png">
+<meta property="og:image" content="http://yoursite.com/images/nodeNote/nvmuninstall.png">
+<meta property="og:updated_time" content="2016-05-21T10:50:57.647Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Node.js开发笔记-环境准备">
+<meta name="twitter:description" content="1、Node.js简介Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。优点是：
+
+基于Chrome V8 引擎
+单线程
+非阻塞式 I/O
+事件驱动
+丰富的第三方类库
+
+2、nvm的安装nvm 的全称是 Node Version Manager，之所以先安装这个工具，是因为Node.">
+<meta name="twitter:image" content="http://yoursite.com/images/nodeNote/nvminstall.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Mak" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/avatar.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Mak</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Web Front-End Keynote</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/makwaihung" title="github">github</a>
+					        
+								<a class="mail" target="_blank" href="mailto:waihungmak@outlook.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/nrm/" style="font-size: 10px;">nrm</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">初级前端狗</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Mak</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/avatar.png" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Mak</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Web Front-End Keynote</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/makwaihung" title="github">github</a>
+			        
+						<a class="mail" target="_blank" href="mailto:waihungmak@outlook.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-Node-js开发笔记-环境准备" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/21/Node-js开发笔记-环境准备/" class="article-date">
+  	<time datetime="2016-05-21T10:12:28.000Z" itemprop="datePublished">2016-05-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Node.js开发笔记-环境准备
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nrm/">nrm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvm/">nvm</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1、Node-js简介"><a href="#1、Node-js简介" class="headerlink" title="1、Node.js简介"></a>1、Node.js简介</h2><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。<br>优点是：</p>
+<ul>
+<li>基于Chrome V8 引擎</li>
+<li>单线程</li>
+<li>非阻塞式 I/O</li>
+<li>事件驱动</li>
+<li>丰富的第三方类库</li>
+</ul>
+<h2 id="2、nvm的安装"><a href="#2、nvm的安装" class="headerlink" title="2、nvm的安装"></a>2、nvm的安装</h2><p>nvm 的全称是 Node Version Manager，之所以先安装这个工具，是因为Node.js的各种特性都没有稳定下来，对于需要经常性在不用新旧项目或尝新的原因，需要来回切换各种版本。<br>nvm 的Github地址为：<a href="https://github.com/creationix/nvm" target="_blank" rel="external">https://github.com/creationix/nvm</a><br>(注：Windows的用户使用nvm-windows进行安装)<br>安装完成之后，打开命令行终端输入nvm<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm</span><br></pre></td></tr></table></figure></p>
+<p>当看到有输出时，则nvm安装成功。</p>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><ul>
+<li>安装Node.js<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm install 4.4.4           //4.4.4代表Node.js对应的版本号</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如下图：<br><img src="/images/nodeNote/nvminstall.png" alt="nvm 安装 Node.js"></p>
+<p><strong>注意：在使用nvm安装Node.js的时候，会一并安装npm, npm 3的版本修复了Windows下文件目录过长的问题</strong></p>
+<ul>
+<li>列出已安装Node.js版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm list</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如下图：<br><img src="/images/nodeNote/nvmlist.png" alt="nvm 列出 Node.js 版本"></p>
+<p><strong>注意：Node.js版本前的*号代表当前使用的Node.js版本</strong></p>
+<ul>
+<li>切换使用Node.js版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm use 4.4.4</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如下图：<br><img src="/images/nodeNote/nvmuse.png" alt="nvm 切换使用 Node.js 版本"></p>
+<ul>
+<li>删除Node.js版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm uninstall 4.4.4</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如下图：<br><img src="/images/nodeNote/nvmuninstall.png" alt="nvm 删除 Node.js 版本"></p>
+<p><strong>注意：删除Node.js版本的时候请将当前Node.js环境切换非删环境</strong></p>
+<h2 id="3、nrm安装"><a href="#3、nrm安装" class="headerlink" title="3、nrm安装"></a>3、nrm安装</h2><p>在学习和开发过程中，有可能在使用npm install 安装相关依赖的时候出错，出错的原因有很多，具体可以看npm输出的log日志，但其中出错的可能是网络被墙掉，导致安装依赖不上，当然可以使用<a href="http://npm.taobao.org/" target="_blank" rel="external">淘宝 NPM 镜像</a>,而我个人推荐使用的是nrm, 全称是 NPM registry manager，可以快速在不同的镜像切换。<br>Github地址是：<a href="https://github.com/Pana/nrm" target="_blank" rel="external">https://github.com/Pana/nrm</a></p>
+<ul>
+<li><p>安装nrm</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g nrm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>列出镜像列表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ nrm ls</span><br><span class="line">    * npm -----  https://registry.npmjs.org/</span><br><span class="line">      cnpm ----  http://r.cnpmjs.org/</span><br><span class="line">      taobao --  http://registry.npm.taobao.org/</span><br><span class="line">      nj ------  https://registry.nodejitsu.com/</span><br><span class="line">      rednpm -- http://registry.mirror.cqupt.edu.cn</span><br><span class="line">      skimdb -- https://skimdb.npmjs.com/registry</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换使用镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ nrm use cnpm  //切换使用 cnpm的镜像</span><br><span class="line"></span><br><span class="line">    Registry has been <span class="built_in">set</span> to: http://r.cnpmjs.org/</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/09/git-start/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git 快速入门</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Mak
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
